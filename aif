@@ -1582,7 +1582,7 @@ install_base() {
 			#systemd-tmpfiles.hook. Note that the installation could still be continued.
 			#This may cause in case of exit codes errors, ignore meanengful errors
 			#TODO patch the hook before executing this pacman call.
-			if [[$? -ne 0]]; then
+			if [[ $? -ne 0 ]]; then
 				check_for_error
 			fi
 			# If the virtual console has been set, then copy config file to installation
