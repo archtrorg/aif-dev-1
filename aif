@@ -1585,6 +1585,7 @@ install_base() {
 			if [[ $? -ne 0 ]]; then
 				check_for_error
 			fi
+			echo "" > /tmp/.errlog
 			# If the virtual console has been set, then copy config file to installation
 			[[ -e /tmp/vconsole.conf ]] && cp -f /tmp/vconsole.conf ${MOUNTPOINT}/etc/vconsole.conf 2>/tmp/.errlog
 			# If specified, copy over the pacman.conf file to the installation
