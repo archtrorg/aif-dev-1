@@ -1,6 +1,6 @@
 # !/bin/bash
 #
-# Architect Installation Framework (version 2.3.1 - 26-Mar-2016)
+# Architect Installation Framework (version 2.3.3 - 28-Feb-2019)
 #
 # Written by Carl Duff for Architect Linux
 #
@@ -23,7 +23,7 @@ PACKAGES="/tmp/.pkgs"			# Packages to install
 MOUNT_OPTS="/tmp/.mnt_opts" 	# Filesystem Mount options
 
 # Save retyping
-VERSION="Architect Installation Framework 2.3.2"
+VERSION="Architect Installation Framework 2.3.3"
 
 # Installation
 DM_INST=""							# Which DMs have been installed?
@@ -1859,10 +1859,11 @@ install_xorg_input() {
 	echo "" > ${PACKAGES}
 
 	dialog --backtitle "$VERSION - $SYSTEM ($ARCHI)" --title " $_InstGrMenuDS " --checklist "$_InstGrMenuDSBody\n\n$_UseSpaceBar" 0 0 12 \
+	"xorg-drivers" "-" off \
 	"wayland" "-" off \
 	"xorg-server" "-" on \
 	"xorg-server-common" "-" off \
-	"xorg-server-utils" "-" on \
+	"xorg-apps" "-" on \
 	"xorg-xinit" "-" on \
 	"xorg-server-xwayland" "-" off \
 	"xf86-input-evdev" "-" off \
@@ -2090,6 +2091,7 @@ install_de_wm() {
 	"gnome-shell" "-" off \
 	"gnome" "-" off \
 	"gnome-extra" "-" off \
+	"gnome-flashback" "-" off \
 	"plasma-desktop" "-" off \
 	"plasma" "-" off \
 	"kde-applications" "-" off \
