@@ -1,11 +1,11 @@
 ##
 ## 							
-## English Translation File (Architect 2.0)		
+## English Translation File (Architect 2.1)		
 ##								
 ##
 ## Written by Carl Duff (27-Feb-2016)
 ##
-## Tradotto da Frank G (02-March-2016)
+## Tradotto da Lorenzo Ferron (12-March-2019)
 
 # Generic
 _UseSpaceBar="Usa la [Barra Spaziatrice] per de/selezionare le opzioni elencate."
@@ -18,7 +18,7 @@ _ErrTitle="Errore"
 _PassErrBody="\nLe password digitate non corrispondono. Provare nuovamente.\n\n"
 
 # Security and Tweaks
-_SecMenuTitle="Securezza e systemd migliorie"
+_SecMenuTitle="Sicurezza e migliorie systemd"
 _SecJournTitle="Modificare il logging di journald"
 _SecCoreTitle="Disabilitare il logging di Coredump"
 _SecKernTitle="Limitare l'accesso ai logs del Kernel"
